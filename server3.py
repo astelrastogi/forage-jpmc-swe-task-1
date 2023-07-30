@@ -64,6 +64,7 @@ def bwalk(min, max, std):
     while True:
         max += normalvariate(0, std)
         yield abs((max % (rng * 2)) - rng) + min
+        
 
 
 def market(t0=MARKET_OPEN):
